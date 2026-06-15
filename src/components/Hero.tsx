@@ -34,7 +34,7 @@ export default function Hero() {
               View Projects
             </Link>
             <a
-              href="/cv.pdf"
+              href="https://drive.google.com/file/d/1BPm0dJpyqO46XwfP3neVq1SR_ni_Ylll/view"
               target="_blank"
               className="border border-orange text-orange hover:bg-orange/10 px-6 py-2.5 rounded-md text-sm transition-colors"
             >
