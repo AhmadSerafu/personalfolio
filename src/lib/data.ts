@@ -154,19 +154,19 @@ export const certifications = [
   {
     name: "React (Basic)",
     issuer: "HackerRank · May 2026",
-    link: "https://www.hackerrank.com/certificates/90449d22022f",
+    link: "https://www.hackerrank.com/certificates/830f32ec2b8b",
     icon: "blue" as const,
   },
   {
     name: "CSS (Basic)",
     issuer: "HackerRank · May 2026",
-    link: "https://www.hackerrank.com/certificates/90449d22022f",
+    link: "https://www.hackerrank.com/certificates/4de2abd01fd8",
     icon: "blue" as const,
   },
   {
     name: "Software Engineer Intern",
     issuer: "HackerRank · May 2026",
-    link: "https://www.hackerrank.com/certificates/90449d22022f",
+    link: "https://www.hackerrank.com/certificates/340d5c2e5e34",
     icon: "blue" as const,
   },
 ];
