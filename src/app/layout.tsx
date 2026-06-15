@@ -8,15 +8,15 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Personalfolio",
+  title: "Ahmad Serafu",
   description:
     "Backend-focused full-stack developer. Hacktiv8 Honors graduate. Building web apps with Node.js, Express, PostgreSQL, and Next.js.",
   openGraph: {
-    title: "Personalfolio",
+    title: "Ahmad Serafu",
     description:
       "Backend-focused full-stack developer. Hacktiv8 Honors graduate. Building web apps with Node.js, Express, PostgreSQL, and Next.js.",
-    url: "https://ahmadluthfihanif.dev",
-    siteName: "Personalfolio",
+    url: "https://ahmad-serafu.vercel.app",
+    siteName: "Ahmad Serafu",
     images: [
       {
         url: "/og-image.png",
