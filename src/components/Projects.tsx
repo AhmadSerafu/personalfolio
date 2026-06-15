@@ -25,7 +25,7 @@ export default function Projects() {
             >
               <div className="absolute top-0 left-0 right-0 h-0.5 bg-orange z-10" />
 
-              <div className="w-full h-48 overflow-hidden bg-black">
+              <div className="w-full h-52 overflow-hidden bg-black">
                 <Image
                   src={project.image}
                   alt={project.title}

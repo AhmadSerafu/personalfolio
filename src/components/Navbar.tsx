@@ -1,11 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Code2, Menu, X } from "lucide-react";
 
 export default function Navbar() {
-  const links = ["About", "Skills", "Projects", "Credentials", "Contact"];
+  const links = [
+    "About",
+    "Skills",
+    "Projects",
+    "Credentials",
+    "Gallery",
+    "Contact",
+  ];
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    links.forEach((item) => {
+      const el = document.getElementById(item.toLowerCase());
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActive(item.toLowerCase());
+        },
+        { rootMargin: "-40% 0px -55% 0px" },
+      );
+
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
 
   return (
     <nav className="sticky top-0 z-10 border-b border-navy bg-bg/80 backdrop-blur-md px-10 py-4">
@@ -21,7 +50,11 @@ export default function Navbar() {
             <a
               key={item}
               href={"#" + item.toLowerCase()}
-              className="text-muted text-sm font-medium hover:text-orange transition-colors duration-200"
+              className={`text-sm font-medium transition-colors duration-200 ${
+                active === item.toLowerCase()
+                  ? "text-orange"
+                  : "text-muted hover:text-orange"
+              }`}
             >
               {item}
             </a>
@@ -50,7 +83,11 @@ export default function Navbar() {
             key={item}
             href={"#" + item.toLowerCase()}
             onClick={() => setOpen(false)}
-            className="text-muted text-sm font-medium hover:text-orange transition-colors"
+            className={`text-sm font-medium transition-colors ${
+              active === item.toLowerCase()
+                ? "text-orange"
+                : "text-muted hover:text-orange"
+            }`}
           >
             {item}
           </a>
