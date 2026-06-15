@@ -13,7 +13,8 @@ export const projects = [
       "Railway",
     ],
     live: "https://skirk.my.id",
-    github: "https://github.com/AhmadSerafu/skirk-portal",
+    github: "https://github.com/AhmadSerafu/skirk-portal-v2",
+    image: "/images/projects/skirk-portal.png",
     featured: true,
   },
   {
@@ -30,6 +31,7 @@ export const projects = [
     ],
     live: "https://impression-job.vercel.app",
     github: null,
+    image: "/images/projects/impression.png",
     featured: false,
   },
   {
@@ -39,6 +41,7 @@ export const projects = [
     tags: ["Socket.io", "Express.js", "PostgreSQL", "React", "Gemini AI"],
     live: null,
     github: "https://github.com/HCK-94-GP-G1/hackatype-client",
+    image: "/images/projects/hackatype.png",
     featured: false,
   },
   {
@@ -55,6 +58,7 @@ export const projects = [
     ],
     live: null,
     github: "https://github.com/AhmadSerafu/strings",
+    image: "/images/projects/strings.jpg",
     featured: false,
   },
   {
@@ -64,6 +68,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS"],
     live: "https://kakera-five.vercel.app",
     github: "https://github.com/AhmadSerafu/kakera",
+    image: "/images/projects/kakera.png",
     featured: false,
   },
   {
@@ -73,6 +78,7 @@ export const projects = [
     tags: ["Express.js", "PostgreSQL", "Sequelize", "EJS", "Bootstrap 5"],
     live: null,
     github: "https://github.com/AhmadSerafu/fesnuk",
+    image: "/images/projects/fesnuk.png",
     featured: false,
   },
 ];
