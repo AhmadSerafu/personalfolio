@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
@@ -23,12 +25,15 @@ export default function Hero() {
           </blockquote>
 
           <div className="flex gap-3 justify-center md:justify-start">
-            <a
-              href="#projects"
-              className="bg-orange hover:bg-orange-hover text-bg px-6 py-2.5 rounded-md text-sm font-semibold transition-colors"
+            <Link
+              to="projects"
+              smooth={true}
+              duration={100}
+              offset={-70}
+              className="bg-orange hover:bg-orange-hover text-bg px-6 py-2.5 rounded-md text-sm font-semibold transition-colors cursor-pointer"
             >
               View Projects
-            </a>
+            </Link>
             <a
               href="/cv.pdf"
               target="_blank"
