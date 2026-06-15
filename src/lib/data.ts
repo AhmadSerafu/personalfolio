@@ -172,7 +172,7 @@ export const certifications = [
 ];
 
 export const contact = {
-  email: "ahluthfiha2412@gmail.com",
+  email: "ahluthfiha24@gmail.com",
   linkedin: "https://www.linkedin.com/in/ahmadluthfihanif2412/",
   github: "https://github.com/AhmadSerafu",
 };
