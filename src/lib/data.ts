@@ -119,6 +119,8 @@ export const education = [
     degree: "Full Stack JavaScript Immersive Program",
     period: "Feb 2026 – May 2026",
     badge: "Honors · 98% avg",
+    transcript:
+      "https://drive.google.com/file/d/1c4IxP414vGnEtiNbV19wOCAsL7fICGga/view?usp=drive_link",
     color: "orange" as const,
   },
   {
@@ -134,7 +136,7 @@ export const certifications = [
   {
     name: "Full Stack JavaScript Program",
     issuer: "Hacktiv8 · May 2026",
-    link: "https://drive.google.com/file/d/1c4IxP414vGnEtiNbV19wOCAsL7fICGga/view",
+    link: "https://drive.google.com/file/d/1IKrZ9EfHwsUO6ZrvNaUnUUZz7Yz4tncL/view?usp=drive_link",
     icon: "orange" as const,
   },
   {
@@ -150,7 +152,19 @@ export const certifications = [
     icon: "blue" as const,
   },
   {
-    name: "React (Basic) + 2 more",
+    name: "React (Basic)",
+    issuer: "HackerRank · May 2026",
+    link: "https://www.hackerrank.com/certificates/90449d22022f",
+    icon: "blue" as const,
+  },
+  {
+    name: "CSS (Basic)",
+    issuer: "HackerRank · May 2026",
+    link: "https://www.hackerrank.com/certificates/90449d22022f",
+    icon: "blue" as const,
+  },
+  {
+    name: "Software Engineer Intern",
     issuer: "HackerRank · May 2026",
     link: "https://www.hackerrank.com/certificates/90449d22022f",
     icon: "blue" as const,
