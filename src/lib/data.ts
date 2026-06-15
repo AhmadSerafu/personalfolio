@@ -30,7 +30,7 @@ export const projects = [
       "Sequelize",
     ],
     live: "https://impression-job.vercel.app",
-    github: null,
+    github: "https://github.com/orgs/HCK94-FP-Impression/repositories",
     image: "/images/projects/impression.png",
     featured: false,
   },
