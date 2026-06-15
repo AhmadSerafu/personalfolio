@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, FolderGit2 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { projects } from "@/lib/data";
 
@@ -10,9 +10,12 @@ export default function Projects() {
       className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
     >
       <div className="max-w-4xl mx-auto">
-        <p className="text-orange text-xs uppercase tracking-widest mb-2">
-          Projects
-        </p>
+        <div className="flex items-center gap-2 mb-2">
+          <FolderGit2 size={16} className="text-orange" />
+          <p className="text-orange text-xs uppercase tracking-widest">
+            Projects
+          </p>
+        </div>
         <h2 className="text-2xl font-semibold text-text mb-8">
           What I've Built
         </h2>
@@ -30,7 +33,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   width={600}
-                  height={192}
+                  height={208}
                   className={`w-full h-full ${project.title === "Strings" ? "object-contain" : "object-cover object-top"}`}
                 />
               </div>
@@ -46,11 +49,9 @@ export default function Projects() {
                     </span>
                   )}
                 </div>
-
                 <p className="text-subtle text-xs leading-relaxed mb-4 flex-1">
                   {project.description}
                 </p>
-
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.tags.map((tag) => (
                     <span
@@ -61,7 +62,6 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-
                 <div className="flex gap-4">
                   {project.live && (
                     <a

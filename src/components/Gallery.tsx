@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { Images } from "lucide-react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -26,15 +27,17 @@ export default function Gallery() {
       className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
     >
       <div className="max-w-4xl mx-auto">
-        <p className="text-orange text-xs uppercase tracking-widest mb-2">
-          Gallery
-        </p>
+        <div className="flex items-center gap-2 mb-2">
+          <Images size={16} className="text-orange" />
+          <p className="text-orange text-xs uppercase tracking-widest">
+            Gallery
+          </p>
+        </div>
         <h2 className="text-2xl font-semibold text-text mb-8">
           Beyond the Code
         </h2>
 
         <div className="flex flex-col md:flex-row gap-3 md:h-120">
-          {/* Featured - kiri */}
           <div
             className="md:flex-2 h-64 md:h-auto rounded-xl overflow-hidden cursor-pointer group relative"
             onClick={() => {
@@ -51,7 +54,6 @@ export default function Gallery() {
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
           </div>
 
-          {/* Grid kecil - kanan */}
           <div className="flex-1 grid grid-cols-2 md:grid-cols-1 gap-3 md:grid-rows-4">
             {photos.slice(1).map((photo, i) => (
               <div

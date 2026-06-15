@@ -12,9 +12,8 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl font-bold text-text leading-tight mb-2">
             Ahmad Luthfi Hanif
           </h1>
-          <p className="text-xl text-blue font-light mb-6">
-            Serafu • Backend Developer
-          </p>
+          <p className="text-xl text-blue font-light mb-2">Backend Developer</p>
+          <p className="text-subtle text-sm mb-6">@AhmadSerafu</p>
 
           <blockquote className="border-l-2 border-orange pl-4 mb-8 text-left">
             <p className="text-subtle text-sm italic leading-relaxed">
