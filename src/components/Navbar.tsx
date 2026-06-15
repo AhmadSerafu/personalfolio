@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Code2, Menu, X } from "lucide-react";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const links = [
@@ -47,17 +48,20 @@ export default function Navbar() {
         {/* Desktop links */}
         <div className="hidden md:flex gap-8">
           {links.map((item) => (
-            <a
+            <Link
               key={item}
-              href={"#" + item.toLowerCase()}
-              className={`text-sm font-medium transition-colors duration-200 ${
+              to={item.toLowerCase()}
+              smooth={true}
+              duration={100}
+              offset={-70}
+              className={`text-sm font-medium transition-colors duration-200 cursor-pointer ${
                 active === item.toLowerCase()
                   ? "text-orange"
                   : "text-muted hover:text-orange"
               }`}
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -79,18 +83,21 @@ export default function Navbar() {
         className={`md:hidden flex flex-col gap-4 overflow-hidden transition-all duration-300 ease-in-out ${open ? "max-h-64 pt-4 pb-2 opacity-100" : "max-h-0 opacity-0"}`}
       >
         {links.map((item) => (
-          <a
+          <Link
             key={item}
-            href={"#" + item.toLowerCase()}
+            to={item.toLowerCase()}
+            smooth={true}
+            duration={100}
+            offset={-295}
             onClick={() => setOpen(false)}
-            className={`text-sm font-medium transition-colors ${
+            className={`text-sm font-medium transition-colors cursor-pointer ${
               active === item.toLowerCase()
                 ? "text-orange"
                 : "text-muted hover:text-orange"
             }`}
           >
             {item}
-          </a>
+          </Link>
         ))}
       </div>
     </nav>

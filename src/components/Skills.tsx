@@ -1,3 +1,4 @@
+import { Layers } from "lucide-react";
 import { skills } from "@/lib/data";
 
 export default function Skills() {
@@ -7,9 +8,12 @@ export default function Skills() {
       className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
     >
       <div className="max-w-4xl mx-auto">
-        <p className="text-orange text-xs uppercase tracking-widest mb-2">
-          Skills
-        </p>
+        <div className="flex items-center gap-2 mb-2">
+          <Layers size={16} className="text-orange" />
+          <p className="text-orange text-xs uppercase tracking-widest">
+            Skills
+          </p>
+        </div>
         <h2 className="text-2xl font-semibold text-text mb-8">Tech Stack</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

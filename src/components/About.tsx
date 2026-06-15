@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Sword, Trophy } from "lucide-react";
+import { Sword, Trophy, User } from "lucide-react";
 
 export default function About() {
   const games = [
@@ -26,9 +26,10 @@ export default function About() {
       className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
     >
       <div className="max-w-4xl mx-auto">
-        <p className="text-orange text-xs uppercase tracking-widest mb-2">
-          About
-        </p>
+        <div className="flex items-center gap-2 mb-2">
+          <User size={16} className="text-orange" />
+          <p className="text-orange text-xs uppercase tracking-widest">About</p>
+        </div>
         <h2 className="text-2xl font-semibold text-text mb-8">Who I am</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_320px] gap-10">

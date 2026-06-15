@@ -7,9 +7,12 @@ export default function Contact() {
     <section id="contact" className="px-6 md:px-10 py-20 border-t border-navy">
       <div className="max-w-4xl mx-auto">
         <div className="bg-surface border border-navy rounded-xl p-8 md:p-12 text-center">
-          <p className="text-orange text-xs uppercase tracking-widest mb-3">
-            Contact
-          </p>
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <Mail size={16} className="text-orange" />
+            <p className="text-orange text-xs uppercase tracking-widest">
+              Contact
+            </p>
+          </div>
           <h2 className="text-3xl font-bold text-text mb-4">
             Let's work together
           </h2>
