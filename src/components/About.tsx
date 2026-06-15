@@ -21,15 +21,17 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="px-10 pt-16 pb-20 border-t border-navy">
+    <section
+      id="about"
+      className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
+    >
       <div className="max-w-4xl mx-auto">
         <p className="text-orange text-xs uppercase tracking-widest mb-2">
           About
         </p>
         <h2 className="text-2xl font-semibold text-text mb-8">Who I am</h2>
 
-        <div className="grid grid-cols-[1fr_320px] gap-10">
-          {/* Left: Narrative */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_320px] gap-10">
           <div className="text-muted text-sm leading-7 space-y-4">
             <p>
               My journey into web development started with an obsession over
@@ -64,9 +66,7 @@ export default function About() {
             <p>Currently based in Jakarta, open to opportunities anywhere.</p>
           </div>
 
-          {/* Right: Cards */}
           <div className="flex flex-col gap-4">
-            {/* Currently Playing */}
             <div className="bg-surface border border-navy rounded-xl p-4">
               <p className="text-orange text-xs uppercase tracking-widest mb-3">
                 Currently Playing
@@ -94,7 +94,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Kendo */}
             <div className="bg-surface border border-navy rounded-xl p-4">
               <p className="text-orange text-xs uppercase tracking-widest mb-3">
                 Kendo

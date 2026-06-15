@@ -2,14 +2,17 @@ import { skills } from "@/lib/data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-10 pt-16 pb-20 border-t border-navy">
+    <section
+      id="skills"
+      className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
+    >
       <div className="max-w-4xl mx-auto">
         <p className="text-orange text-xs uppercase tracking-widest mb-2">
           Skills
         </p>
         <h2 className="text-2xl font-semibold text-text mb-8">Tech Stack</h2>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {Object.entries(skills).map(([category, items]) => (
             <div
               key={category}

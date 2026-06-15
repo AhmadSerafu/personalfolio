@@ -6,7 +6,7 @@ export default function Credentials() {
   return (
     <section
       id="credentials"
-      className="px-10 pt-16 pb-20 border-t border-navy"
+      className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
     >
       <div className="max-w-4xl mx-auto">
         <p className="text-orange text-xs uppercase tracking-widest mb-2">
@@ -16,8 +16,7 @@ export default function Credentials() {
           Education & Certifications
         </h2>
 
-        <div className="grid grid-cols-2 gap-10">
-          {/* Education */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <p className="text-blue text-xs uppercase tracking-widest mb-4">
               Education
@@ -72,7 +71,6 @@ export default function Credentials() {
             </div>
           </div>
 
-          {/* Certifications */}
           <div>
             <p className="text-blue text-xs uppercase tracking-widest mb-4">
               Certifications

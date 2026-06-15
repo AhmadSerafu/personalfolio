@@ -5,7 +5,10 @@ import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-10 pt-16 pb-20 border-t border-navy">
+    <section
+      id="projects"
+      className="px-6 md:px-10 pt-16 pb-20 border-t border-navy"
+    >
       <div className="max-w-4xl mx-auto">
         <p className="text-orange text-xs uppercase tracking-widest mb-2">
           Projects
@@ -14,16 +17,14 @@ export default function Projects() {
           What I've Built
         </h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div
               key={project.title}
               className="bg-surface border border-navy rounded-xl flex flex-col relative overflow-hidden"
             >
-              {/* Orange top accent */}
               <div className="absolute top-0 left-0 right-0 h-0.5 bg-orange z-10" />
 
-              {/* Screenshot */}
               <div className="w-full h-48 overflow-hidden bg-black">
                 <Image
                   src={project.image}
@@ -34,9 +35,7 @@ export default function Projects() {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-5 flex flex-col flex-1">
-                {/* Title + Featured badge */}
                 <div className="flex items-center gap-2 mb-2">
                   <h3 className="text-text font-semibold text-base">
                     {project.title}
@@ -52,7 +51,6 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.tags.map((tag) => (
                     <span
@@ -64,7 +62,6 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Links */}
                 <div className="flex gap-4">
                   {project.live && (
                     <a
