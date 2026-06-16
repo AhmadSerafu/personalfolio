@@ -40,10 +40,16 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-20 border-b border-navy bg-bg/80 backdrop-blur-md px-10 py-4">
       <div className="flex justify-between items-center">
-        <div className="flex items-center gap-2 text-orange">
+        <Link
+          to="hero"
+          smooth={true}
+          duration={100}
+          offset={-50}
+          className="flex items-center gap-2 text-orange cursor-pointer"
+        >
           <Code2 size={22} />
           <span className="font-bold text-lg tracking-wide">Personalfolio</span>
-        </div>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex gap-8">
